@@ -1,0 +1,178 @@
+/* Navigation Styles  */
+
+/* MainNav Menu */
+
+#mainNavWrap {
+margin: 0px;
+padding: 0px;
+z-index: 8;
+float:right;
+clear:right;
+}
+
+#mainNav {
+	 clear:both;
+	 text-align: left;
+	 color: #fff;
+	 padding: 0;
+	 overflow: visible;
+	 margin-left: 0px;
+	 position:relative;
+	 z-index:100;
+
+	 display: block;
+	 float:right;
+	 margin-top:0px;
+}
+
+#mainNav ul {
+	list-style: none;
+	margin: 0 0 0 0;
+	padding-left: 0;
+	padding-top: 0px;
+}
+
+#mainNav li {
+	float: left;
+	position: relative;
+	font-size:17px;
+	font-family: Helvetica, 'Open Sans', sans-serif;
+}
+#mainNav a {
+	color: #262525;
+	display: block;
+	line-height:150px;
+	/* padding-left:12px;
+	padding-right:12px; */
+	font-weight: 500;
+	text-decoration: none;
+	/*border-right:1px solid #dfdfdf;*/
+
+		padding-right: 10px;
+		padding-left: 10px;
+		
+		background-size: 100% 200%;
+    background-image: linear-gradient(to bottom, transparent 50%, #bf1e2e 50%);
+    -webkit-transition: background-position 0.3s;
+    -moz-transition: background-position 0.3s;
+    transition: background-position 0.3s;
+		
+}
+
+#mainNav .featuredItem a {
+	color: #fff;
+	display: block;
+	line-height:45px;
+	/* padding-left:12px;
+	padding-right:12px; */
+	font-weight: 500;
+	text-decoration: none;
+	/*border-right:1px solid #dfdfdf;*/
+	-webkit-transition: background 0.2s linear;
+        -moz-transition: background 0.2s linear;
+        -ms-transition: background 0.2s linear;
+        -o-transition: background 0.2s linear;
+        transition: background 0.2s linear;
+		border-right:1px solid #dddbb5;
+		padding-right: 20px;
+		padding-left: 20px;
+		background:#9fa067;
+}
+
+#mainNav #mainNavListItemLast a { border-right:none; paddingf-right:0px; }
+
+#mainNav li:hover > a,
+#mainNav a:focus {
+text-decoration: none;
+background-position: 0 -100%;
+color:#fff;
+}
+#mainNav a.active{
+/* background-position: 0 -100%;*/ 
+	text-decoration:none;
+	color:#bf1e2e;
+	/* background:#95beef; */
+}
+
+
+#mainNav li.featuredItem:hover > a,
+#mainNav .featuredItem a:focus {
+	color: #fff;
+	background:#b7b879;
+	text-decoration:none;
+	/* background:#95beef; */
+}
+
+
+#mainNav ul ul{ 
+	position:absolute; 
+	top:-99999px; 
+	left:0;
+	opacity: 0;
+	-webkit-transition: opacity .5s ease-in-out;
+	-moz-transition: opacity .5s ease-in-out;
+	-o-transition: opacity .5s ease-in-out;
+	z-index:497; 
+	background: #33337b;
+	border: none;
+	padding: 2px; 
+	/* border-top:none;  */
+	/* box-shadow:#111 0 3px 4px; */
+	border-bottom-left-radius:6px; 
+	border-bottom-right-radius:6px;
+	padding-bottom:20px;
+	min-width:200px;
+}
+#mainNav ul ul ul { 
+	position:absolute; 
+	top:-99999px; 
+	left:100%; 
+	opacity: 0; 
+	-webkit-transition: opacity .5s ease-in-out;
+	-moz-transition: opacity .5s ease-in-out;
+	-o-transition: opacity .5s ease-in-out;
+	border-radius:6px;
+	border:1px solid #444;
+
+}
+#mainNav ul li:hover>ul{ opacity: 1; position:absolute; top:99%; left:0; }
+#mainNav ul ul li:hover>ul{ position:absolute; top:0; left:100%; opacity: 1; z-index:497; /* background:#333; */ }
+
+#mainNav ul#mainNavList ul li{ float:none; position:relative; }
+
+#mainNavList ul li a:link , #mainNavList ul li a:visited  {
+	float:none;
+	margin:0px;
+	padding:0px; 
+	color: #fff;
+	font-weight: 600; 
+	padding-top:4px;
+	margin-right:0px;margin-left:0px;margin-top:4px;
+	text-decoration:none;
+	padding-left:12px;
+	padding-right:10px;
+	padding-bottom:4px;
+	border-right:none;
+	line-height:normal;
+	height:100%;
+	}
+
+	
+	#mainNav ul.mainNavList ul li {
+
+	margin:0px;
+	padding:0px; 
+	margin-left:0px;
+	font:14px/27px Calibri, Arial, Helvetica, sans-serif;
+	height:100%;
+	}
+
+
+#mainNavList ul li a:link      { color:#fff; text-decoration: none; font-weight:500; -webkit-transition: all .5s ease-in-out;	-moz-transition: all .5s ease-in-out;	-o-transition: all .5s ease-in-out; }
+#mainNavList ul li a:visited   { color:#fff; text-decoration: none; }
+#mainNavList ul li a:active    { color:#fff; text-decoration: none; }
+#mainNavList ul li a:hover     { color: #b0b0b0; text-decoration: none; background:none; }
+
+#mainNavList ul li a.active    { color:#aaa887; text-decoration: none; background:none;}
+
+
